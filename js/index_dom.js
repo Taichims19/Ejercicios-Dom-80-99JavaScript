@@ -6,6 +6,7 @@ import scrollTopButton from "./dom/boton_scroll.js";
 import darkTheme from "./dom/tema_oscuro.js";
 import responsiveMedia from "./dom/objeto_responsive.js";
 import responsiveTester from "./dom/prueba_responsive.js";
+import userDeviceInfo from "./dom/deteccion_dispositivos.js";
 
 
 
@@ -32,7 +33,8 @@ d.addEventListener("DOMContentLoaded", (e)=>{
   `<a href="https://goo.gl/maps/sBX4b1GSRKRjFPYJA" target="_blank" rel="noopener">Ver Mapa</a>`,
   `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7906.422163670376!2d-72.21827924278774!3d7.767426900847229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666cbf9eef9f85%3A0x60fd7d23fe7d2e9f!2sEstacion%20de%20bomberos%2019%20de%20abril!5e0!3m2!1ses-419!2sve!4v1692068673983!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
   );
-  responsiveTester("responsive-tester")
+  responsiveTester("responsive-tester");
+  userDeviceInfo("user-device");
   
 });
 
